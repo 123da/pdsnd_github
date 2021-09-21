@@ -25,6 +25,13 @@ index 13a6e85..bb56def 100644
 +++ b/README.md
 @@ -5,6 +5,18 @@
 ### Description
+diff --git a/README.md
+b/README.md
+index 13a6e85..bb56def 100644
+--- a/README.md
++++ b/README.md
+@@ -5,6 +5,18 @@
+### Description
 This is a CLI program developed
 to
 allow the user to explore an USbikeshare system database and
@@ -67,4 +74,4 @@ able to chose to view raw data
 and
 also able sort this data by
 columns,
-in ascending or descending order.
+in ascending or descending
