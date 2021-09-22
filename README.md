@@ -1,77 +1,65 @@
-#This is my first project on udacity about version control and how to use git and github
-b/bikeshare.py
-index cd1d149..f4c041f 100644
---- a/bikeshare.py
-+++ b/bikeshare.py
-@@ -16,6 +16,10 @@ weekdays =
-('sunday', 'monday', 'tuesday',
-'wednesday', 'thursday', 'friday',
-def choice(prompt, choices=('y',
-'n')):
-"""Return a valid input from the
-user given an array of possible
-answers.
-++
-Args:
-+ (str) prompt - prompt with
-input request
-+ (tup) choices - tuple with
-elements of possible answers
-"""
-#iff --git a/README.md
-b/README.md
-index 13a6e85..bb56def 100644
---- a/README.md
-+++ b/README.md
-@@ -5,6 +5,18 @@
-### Description
-diff --git a/README.md
-b/README.md
-index 13a6e85..bb56def 100644
---- a/README.md
-+++ b/README.md
-@@ -5,6 +5,18 @@
-### Description
-This is a CLI program developed
-to
-allow the user to explore an USbikeshare system database and
-retrieve statistics information
-from
-the database. The user is able
-filter
-the information by city, month
-and
-weekday, in order to visualize
-statistics information related to a
-specific subset of data.
-+#### Getting Started
-++
-This program is structured in 2
-steps.
-++
-In a first moment, the user selects
-the filters that are going to be
-applied to the database. The user
-is
-able to chose as many filters as it
-would like.
-++
-After this step, the DataFrame for
-the analysis is created based on
-the
-filters chosen by the user.
-++
-In a second moment, the user is
-able to chose, from a list of
-options,
-the statistics the user would like
-to
-calculate, based on the available
-filtered data.
-++
-As of April 2, 2019 the user is now
-able to chose to view raw data
-and
-also able sort this data by
-columns,
-in ascending or descending
+#DATE CREATED
+21 September 2021
+
+#PROJECT TITLE
+US Bikeshare Data Analysis Project Posting it on Github course work
+##Overview
+In this project, Python is used to explore data related to bike share systems for three major cities in the United States — Chicago, New York City, and Washington.
+
+    The source code takes in raw input from the user to create an interactive experience.
+    According to the input the code will import the data and will provide information by computing descriptive statistics.
+##Files used:
+bikeshare.py
+##Credits:
+Udacity mentor team plus QA
+Stackoverflow
+classroom lessons from Udacity
+##Code explained in Detail:
+How the program works:
+
+The code developed takes in raw input to create an interactive experience in the terminal that answers questions about the dataset. The experience is interactive because depending on a user's input, the answers to the questions will change! There are four questions that will change the answers:
+
+    Would you like to see data for Chicago, New York, or Washington?
+    Would you like to filter the data by month, day, or not at all?
+    (If they chose month) Which month - January, February, March, April, May, or June?
+    (If they chose day) Which day - Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, or Sunday?
+
+The answers to the questions above will determine the city and timeframe on which you'll do data analysis. After filtering the dataset, users will see the statistical result of the data, and choose to start again or exit.
+The Datasets:
+
+Randomly selected data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
+
+    Start Time (e.g., 2017-01-01 00:07:57)
+    End Time (e.g., 2017-01-01 00:20:53)
+    Trip Duration (in seconds - e.g., 776)
+    Start Station (e.g., Broadway & Barry Ave)
+    End Station (e.g., Sedgwick St & North Ave)
+    User Type (Subscriber or Customer)
+
+The Chicago and New York City files also have the following two columns:
+
+    Gender
+    Birth Year
+
+Statistics Computed:
+
+The code helps user to tell about bike share use in Chicago, New York City and Washington by computing a variety of descriptive statistics. In this project, the code output will provide the following information:
+
+    Popular times of travel (i.e., occurs most often in the start time):
+        most common month
+        most common day of week
+        most common hour of day
+
+    Popular stations and trip:
+        most common start station
+        most common end station
+        most common trip from start to end (i.e., most frequent combination of start station and end station)
+
+    Trip duration:
+        total travel time
+        average travel time
+
+    User info:
+        counts of each user type
+        counts of each gender (only available for NYC and Chicago)
+        earliest, most recent, most common year of birth (only available for NYC and Chicago)
