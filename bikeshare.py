@@ -44,7 +44,7 @@ def get_filters():
     while city.lower() not in CITY_DATA:
         city = \
             input('''
-Hello! Let\'s explore some US bikeshare data! 
+Hello! Let\'s explore some US bikeshare data!
 Wanna see the data for Chicago, New York city, or Washington?
 ''')
         city = city.lower()
@@ -173,7 +173,7 @@ def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
     print ('''
-Calculating Trip Duration...
+Calculating Trip Duration stats...
 ''')
     start_time = time.time()
 
@@ -204,7 +204,7 @@ Calculating User Stats...
     # Since Gender and birth year of washington is not in the CSV file, exception being handled.
 
     if city == 'washington':
-        print ('\n The Gender and Birth Year information is not available for Washington.')
+        print ('\n Not that The Gender and Birth Year information is not available for Washington.')
     else:
 
         # Display counts of gender
@@ -239,7 +239,7 @@ def main():
         while True:
             show_data = \
                 input('''
-Do you want to explore the raw data? Enter yes or no.: 
+Do you want to explore the raw data? Enter yes or no.:
 ''')
             if show_data.lower() != 'yes':
                 break
@@ -253,7 +253,7 @@ Do you want to explore the raw data? Enter yes or no.:
                 while True:
                     display_more = \
                         input('''
- Do u want to display more data.? Enter yes or no.: 
+ Do u want to display more data.? Enter yes or no.:
  ''')
                     if display_more.lower() == 'yes':
                         head += 5
